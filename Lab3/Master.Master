@@ -1,0 +1,34 @@
+﻿<%--Name: Dana El-Zoobi and Madeleine Duley and Kit Harmon
+Date: 2/27/2022
+File Purpose: This file is our master page--%>
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Master.master.cs" Inherits="Lab2.Master" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Madeleine Duley & Dana El-Zoobi & Kit Harmon</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <%--create buttons for each page, in a single row--%>
+            <asp:Button ID="studentInfo" runat="server" Text="Student Information" OnClick="studentInfo_Click"  />
+            <asp:Button ID="memberInfo" runat="server" Text="Member Information" OnClick="memberInfo_Click" />
+            <asp:Button ID="companyInfo" runat="server" Text="Companies" OnClick="companyInfo_Click" />
+            <asp:Button ID="scholarshipInfo" runat="server" Text="Scholarships" OnClick="scholarshipInfo_Click" />
+            <asp:Button ID="internshipInfo" runat="server" Text="Internships" OnClick="internshipInfo_Click" />
+            <asp:Button ID="jobInfo" runat="server" Text="Jobs" OnClick="jobInfo_Click" />
+<asp:Label ID="lblUserStatus" runat="server" Text=""></asp:Label>
+             <asp:Button ID="btnLogout" runat="server" Text="Logout" OnClick="btnLogout_Click" />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <br />
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

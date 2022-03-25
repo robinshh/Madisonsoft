@@ -1,0 +1,30 @@
+﻿<%--Dana El-Zoobi and Madeleine Duley and Kit Harmon
+2/27/2022--%>
+
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="StudentMaster.Master.cs" Inherits="Lab2.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Madeleine Duley & Dana El-Zoobi & Kit Harmon</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <br />
+            <asp:Button ID="userInfobtn" runat="server" Text="User Information" OnClick="userInfobtn_Click" />
+            <asp:Button ID="internApplybtn" runat="server" Text="Apply for Internships" OnClick="internApplybtn_Click" />
+            <asp:Button ID="jobApplybtn" runat="server" Text="Apply for Jobs" OnClick="jobApplybtn_Click" />
+            <asp:Button ID="scholarApplybtn" runat="server" Text="Apply for Scholarships" OnClick="scholarApplybtn_Click" />
+            <asp:Label ID="lblUserStatus2" runat="server" Text=""></asp:Label>
+                <asp:Button ID="Logoutbtn" runat="server" Text="Logout" OnClick="Logoutbtn_Click" />
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

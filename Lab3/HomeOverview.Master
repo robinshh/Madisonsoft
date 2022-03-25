@@ -1,0 +1,49 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HomeOverview.master.cs" Inherits="Lab3.HomeOverview" %>
+
+<!DOCTYPE html>
+
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        #Buttons{
+            padding-left:5em;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Image ID="Image1" src="OleSchool.png" runat="server" Width="34%"/>
+            <br />
+                
+                <div id="Scroll">
+                    <asp:Button class="Buttons" ID="bttnHome" runat="server" Text="Home" OnClick="bttnHome_Click" />
+                    <asp:Button class="Buttons" ID="bttnMission" runat="server" Text="Mission" OnClick="bttnMission_Click" />
+                    <asp:Button class="Buttons" ID="bttnEvents" runat="server" Text="Events" OnClick="bttnEvents_Click"/>
+                    <asp:Button class="Buttons" ID="bttnAward" runat="server" Text="Award Winners" OnClick="bttnAward_Click" />
+                    <asp:Button class="Buttons" ID="bttnDonations" runat="server" Text="Donations" OnClick="bttnDonations_Click" />
+                    
+                    <asp:Button class="Buttons" ID="bttnContact" runat="server" Text="Contanct Us" OnClick="bttnContact_Click" />
+
+
+                    <br />
+
+                    <asp:Button ID="btnMemberLogin" runat="server" Text="Member Login" OnClick="btnMemberLogin_Click" />
+                    <asp:Button ID="btnStudentLogin" runat="server" Text="Student Login" OnClick="btnStudentLogin_Click" />
+                    <asp:Button ID="btnAdminLogin" runat="server" Text="Admin Login" OnClick="btnAdminLogin_Click" />
+
+
+                </div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
